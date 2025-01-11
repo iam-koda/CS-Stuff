@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Logique pour afficher des phrases aléatoires
     const phrases = [
-        "Bande de noobzz",
-        "C'est bon ! Je joue scout TOUTE la game!",
-        "Stop push guys.",
-        "Si tu prend pas de kevlar casque je te fume!",
-        "OHHH noooooooo, c'est bon sa cheat en face."
+        `"Bande de noobzz"`,
+        `"C'est bon ! Je joue scout TOUTE la game!"`,
+        `"Stop push guys."`,
+        `"Si tu prend pas de kevlar casque je te fume!"`,
+        `"OHHH noooooooo, c'est bon sa cheat en face."`
     ];
 
     const randomPhraseElement = document.querySelector('.random-phrase');
