@@ -29,10 +29,20 @@ h1.title {
     text-align: center;
 }
 
-h2.title {
+h2.title_t {
     font-size: 1.8em;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     text-shadow: 0 0 5px #ffcc00;
+}
+
+h2.title_ct {
+    font-size: 1.8em;
+    margin-bottom: 45px;
+    text-shadow: 0 0 5px #0059ff;
+}
+.map-image{
+    float: left;
+    _margin-bottom: 50px;
 }
 
 .strategy-list {
@@ -125,7 +135,6 @@ h2.title {
     padding: 20px;
     display: flex;
     justify-content: center;
-    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -136,6 +145,7 @@ h2.title {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     width: 100%;
+    min-height: 78.88vh;
     padding: 20px 30px;
     line-height: 1.6;
 }
@@ -144,17 +154,33 @@ h1.strategy-title {
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
-    color: #00509e;
-    text-shadow: 0 2px 4px rgba(0, 80, 158, 0.2);
 }
 
 h2.section-title {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #333;
-    border-bottom: 2px solid #00509e;
     display: inline-block;
     padding-bottom: 5px;
+}
+
+h1.ct {
+    color: #00509e;
+    text-shadow: 0 2px 4px rgba(0, 80, 158, 0.2);
+}
+
+h2.ct {
+    color: #333;
+    border-bottom: 2px solid #00509e;
+}
+
+h1.t {
+    color: #d9c000;
+    text-shadow: 0 2px 4px rgba(196, 157, 0, 0.2);
+}
+
+h2.t {
+    color: #333;
+    border-bottom: 2px solid #d9c000;
 }
 
 p.paragraph {
