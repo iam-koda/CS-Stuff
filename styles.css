@@ -24,6 +24,38 @@ header h1, footer p {
     margin: 0;
 } 
 
+.header-buttons {
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    float: left;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-btn {
+    background-color: #d3d3d3; /* Gris clair */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.header-btn img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%); /* Assure que l'image est en nuances de gris */
+}
+
+.header-btn:hover {
+    background-color: #a9a9a9; /* Gris légèrement plus foncé au survol */
+}
+
 footer {
     background-color: #333;
     color: white;
