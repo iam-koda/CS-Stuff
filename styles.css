@@ -145,6 +145,11 @@ header {
     gap: 20px;
 }
 
+.map-list{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .map-item {
     display: block;
     width: 400px;
