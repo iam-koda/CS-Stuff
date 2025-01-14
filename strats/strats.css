@@ -138,16 +138,29 @@ h2.title_ct {
     box-sizing: border-box;
 }
 
+.parts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 82.1vh;
+}
+
 .strategy-container {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 100%;
+    width: 800px;
+    _width: 100%;
     min-height: 78.88vh;
     padding: 20px 30px;
     line-height: 1.6;
+}
+
+.parts .strategy-container {
+    min-height: auto;
 }
 
 h1.strategy-title {
@@ -209,3 +222,7 @@ li.list-item {
     border-radius: 4px;
     font-style: italic;
 }
+
+.strategy-container-content {
+    display: none;
+  }
