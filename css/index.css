@@ -1,0 +1,68 @@
+/* Fond sombre */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://preview.redd.it/v065cssvidh01.jpg?auto=webp&s=4feb78943c46e1b487330230b3d61524af14d804');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Container des boutons */
+.button-container {
+    margin-top: 200px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style des boutons */
+.cs-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+  padding: 20px 30px;
+  border: 2px solid #f8f8f8;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cs-button img.cs-icon {
+  width: 40px;
+  height: 40px;
+  filter: invert(1); /* Rend l’icône blanche sur fond sombre */
+}
+
+.cs-button:hover {
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+  transform: scale(1.05);
+}
+
+.cs-button:hover img.cs-icon {
+  filter: invert(0); /* L’icône devient noire au survol */
+}
+
+.footer-credit {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  color: #f8f8f8;
+  font-size: 18px;
+  opacity: 0.7;
+  font-family: Arial, sans-serif;
+  pointer-events: none; /* le texte ne bloque aucun clic */
+}
+
