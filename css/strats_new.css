@@ -1,0 +1,134 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.column {
+    width: 30%;
+    padding: 20px;
+}
+
+h1.title {
+    font-size: 2.6em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2.title_t {
+    font-size: 1.8em;
+    margin-bottom: 45px;
+    text-shadow: 0 0 5px #ffcc00;
+}
+
+h2.title_ct {
+    font-size: 1.8em;
+    margin-bottom: 45px;
+    text-shadow: 0 0 5px #0059ff;
+}
+
+.map-image {
+    float: left;
+    _margin-bottom: 50px;
+}
+
+.tooltip {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 110%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.strategy-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.strategy-item {
+    margin: 30px 0;
+}
+
+.strategy-button {
+    display: block;
+    padding: 15px;
+    height: 80px;
+    font-size: 1.2em;
+    font-weight: bold;
+    _text-transform: uppercase;
+    color: #f8f8f8;
+    background: linear-gradient(90deg, #333333, #222222);
+    border-radius: 5px;
+    text-shadow: 0 0 5px #000;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+}
+
+.strategy-button.t {
+    border: 2px solid #ffcc00;
+}
+
+.strategy-button.t:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+.strategy-button.t:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 204, 0, 0.2);
+    transform: skewX(-30deg);
+    transition: left 0.5s ease;
+}
+
+.strategy-button.ct {
+    border: 2px solid #0059ff;
+}
+
+.strategy-button.ct:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #0059ff;
+}
+
+.strategy-button.ct:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 68, 255, 0.512);
+    transform: skewX(-30deg);
+    transition: left 0.5s ease;
+}
+
+.strategy-button:hover:before {
+    left: 100%;
+}
+
+.strategy-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px #ff6600;
+}

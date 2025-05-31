@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondamentaux CT</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../strats.css">
+    <link rel="stylesheet" href="../../css/starts_content.css">
+    <link rel="icon" type="image/png" href="../../img/viking_289x289_.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-buttons">
+            <a href="../../index.html" class="header-btn grenade">
+                <img src="../../svg/home.svg" alt="Grenade Fumigène">
+            </a>
+            <a href="../../maps/cs-stufs.html" class="header-btn grenade">
+                <img src="../../svg/smoke.svg" alt="Grenade Fumigène">
+            </a>
+            <a href="../cs-strats.html" class="header-btn chess">
+                <img src="../../svg/chess.svg" alt="Pion d'échec">
+            </a>
+        </div>
+        <div>
+            <h1 class="main-title">Jeawarly - Strategies</h1>
+            <p class="random-phrase animated-text">Sinon sa sert à rien de jouer à CS.</p>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="parts">
+            <h1 class="strategy-title">Plans de Stuffs - Inferno</h1>
+            <div class="note">
+                <p class="paragraph"><strong> Note : </strong> Il s’agit ici de définir les stuffs essentiels d’une
+                    exécution sur chaque BP.</p>
+            </div>
+            <div class="strategy-container">
+                <a href="#">
+                    <h2 class="section-title t toggle-concept" data-target="content-1" id="toggle-concept">Exécution
+                        site B
+                    </h2>
+                </a>
+                <div class="strategy-container-content" id="content-1">
+
+                    <img src="../../img/inferno_stuffs_exec_b.jpg" alt="T Side Illustration" class="image" width="70%">
+
+                    <h3 class="subsection-title">Ordre de stuffs : smokes > molo > flash</h3>
+
+                    <h3 class="subsection-title">Stuffs :</h3>
+                
+                    </p>
+                    <div class="video-gallery">
+                        <div class="video-block">
+                            <iframe src="https://www.youtube.com/embed/rj9txh3SDfo?rel=0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <b class="video-label">Smoke CT</b>
+                        </div>
+                        <div class="video-block">
+                            <iframe src="https://www.youtube.com/embed/-LjRGy_6lZs?rel=0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <b class="video-label">Smoke coffins (from gas)</b>
+                        </div>
+
+                        <div class="video-block">
+                            <iframe src="https://www.youtube.com/embed/Wu8oPyU-WMs?rel=0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <b class="video-label">Molo C3</b>
+                        </div>
+
+                        <div class="video-block">
+                            <iframe src="https://www.youtube.com/embed/OB8pnoydHS4?rel=0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <b class="video-label">Molo boost C1</b>
+                        </div>
+
+                        <div class="video-block">
+                            <iframe src="https://www.youtube.com/embed/HiNymRa7h88?rel=0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <b class="video-label">Molo Dark</b>
+                        </div>
+
+                        <div class="video-block">
+                            <iframe src="https://www.youtube.com/embed/fa1aXugnEAw?rel=0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <b class="video-label">Flash balcon</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-container">
+                <a href="#">
+                    <h2 class="section-title t toggle-concept" data-target="content-2" id="toggle-concept">Prise Banana
+                        classique
+                    </h2>
+                </a>
+                <div class="strategy-container-content" id="content-2">
+
+                    <h3 class="subsection-title">Stuffs :</h3>
+                    <p class="paragraph">
+                        Molo Car
+                        Flash Kenny (from ramp) | Flash Kenny (from mid)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Koda Corporation</p>
+    </footer>
+
+    <script>
+        // Sélectionne tous les éléments avec la classe "toggle-concept"
+        const toggles = document.querySelectorAll('.toggle-concept');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                // Récupère l'ID de la cible à partir de l'attribut "data-target"
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+
+                // Basculer l'affichage du contenu
+                if (content.style.display === 'none' || content.style.display === '') {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
