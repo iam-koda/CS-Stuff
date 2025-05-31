@@ -1,9 +1,29 @@
+.main-container {
+  display: flex;
+  flex-direction: column; /* Titre au-dessus */
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-content {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.parts-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .parts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-left: 10px;
     margin-right: 10px;
+    width: 45%;
     min-height: 82.1vh;
 }
 
@@ -17,6 +37,7 @@
     min-height: 78.88vh;
     padding: 20px 30px;
     line-height: 1.6;
+    flex-direction:row;
 }
 
 .video-gallery {
@@ -44,4 +65,16 @@
   font-size: 18px;
   margin-top: 8px;
   text-align: center;
+}
+
+.image {
+  width: 55%;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
